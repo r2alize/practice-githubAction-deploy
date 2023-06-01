@@ -22,6 +22,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+    - name: Add permission 
+      run: chmod +x gradlew 
     - name: init with Gradle
       uses: gradle/gradle-build-action@v2
     - run: gradle init
